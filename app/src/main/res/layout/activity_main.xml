@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".views.Activities.MainActivity"
     android:background="@color/colorPrimary">
 
     <EditText
@@ -16,7 +16,6 @@
         android:layout_marginBottom="16dp"
         android:gravity="center"
         android:hint="@string/landing_title"
-        android:text="london"
         android:textColorHint="@color/colorPrimaryDark"
         app:layout_constraintBottom_toTopOf="@+id/btMain"
         app:layout_constraintEnd_toEndOf="parent"

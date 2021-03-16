@@ -1,19 +1,16 @@
-package mexicandeveloper.com.weatherbycity
+package mexicandeveloper.com.weatherbycity.views.Fragments
 
-import android.content.Context
-import android.content.Intent
-import android.database.DataSetObserver
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import androidx.activity.viewModels
 import androidx.fragment.app.*
 import androidx.lifecycle.Observer
-import androidx.lifecycle.observe
 import mexicandeveloper.com.weatherbycity.Models.WeatherData
+import mexicandeveloper.com.weatherbycity.R
 import mexicandeveloper.com.weatherbycity.ViewModels.WeatherViewModel
+import mexicandeveloper.com.weatherbycity.views.Activities.WeatherActivity
 
 class WeatherListFragment : ListFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -50,17 +47,17 @@ class WeatherListFragment : ListFragment() {
             when (position) {
                 0 -> {
                     convertView.findViewById<TextView>(R.id.tvRowTitle).text = "Clear"
-                    convertView.findViewById<TextView>(R.id.tvRowTempe).text =
+                    convertView.findViewById<TextView>(R.id.tvRowTempe).text ="Temp: "+
                         data?.main?.temp.toString()
                 }
                 1 -> {
                     convertView.findViewById<TextView>(R.id.tvRowTitle).text = "Cloudy"
-                    convertView.findViewById<TextView>(R.id.tvRowTempe).text =
+                    convertView.findViewById<TextView>(R.id.tvRowTempe).text ="Temp: "+
                         data?.main?.temp.toString()
                 }
                 2 -> {
                     convertView.findViewById<TextView>(R.id.tvRowTitle).text = "Rain"
-                    convertView.findViewById<TextView>(R.id.tvRowTempe).text =
+                    convertView.findViewById<TextView>(R.id.tvRowTempe).text ="Temp: "+
                         data?.main?.humidity.toString()
                 }
             }

@@ -1,4 +1,4 @@
-package mexicandeveloper.com.weatherbycity
+package mexicandeveloper.com.weatherbycity.views.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,10 +6,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
-import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import kotlinx.android.synthetic.main.activity_main.*
 import mexicandeveloper.com.weatherbycity.Models.WeatherData
+import mexicandeveloper.com.weatherbycity.R
 import mexicandeveloper.com.weatherbycity.ViewModels.WeatherViewModel
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {

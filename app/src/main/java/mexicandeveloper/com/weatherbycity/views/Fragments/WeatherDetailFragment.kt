@@ -1,4 +1,4 @@
-package mexicandeveloper.com.weatherbycity
+package mexicandeveloper.com.weatherbycity.views.Fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import kotlinx.android.synthetic.main.fragment_detailweather.*
 import mexicandeveloper.com.weatherbycity.Models.WeatherData
+import mexicandeveloper.com.weatherbycity.R
 import mexicandeveloper.com.weatherbycity.ViewModels.WeatherViewModel
 
 class WeatherDetailFragment : Fragment() {

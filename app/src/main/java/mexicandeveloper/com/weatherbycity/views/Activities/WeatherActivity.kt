@@ -1,10 +1,12 @@
-package mexicandeveloper.com.weatherbycity
+package mexicandeveloper.com.weatherbycity.views.Activities
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.commit
 import kotlinx.android.synthetic.main.activity_weather.*
+import mexicandeveloper.com.weatherbycity.R
+import mexicandeveloper.com.weatherbycity.views.Fragments.WeatherListFragment
 
 class WeatherActivity : FragmentActivity() {
 
